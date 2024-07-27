@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="box">
+    <div class="container">
+            <div class="button">
+                <input type="radio" onclick="fun()" name="button" id="leftbutton" checked >
+                <label class="btnleft" for="leftbutton">ON</label>
+                <input type="radio" onclick="fun2()" name="button" id="rightbutton" >
+                <label class="btnright" for="rightbutton">OFF</label>
+            </div>
+    </div>
+</body>
+<script>
+    function fun(){
+        document.getElementById("box").style.backgroundColor="yellow";
+    }
+    function fun2()
+    {
+        document.getElementById("box").style.backgroundColor="#292929"
+    }
+</script>
+</html>
